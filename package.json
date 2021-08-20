@@ -46,11 +46,11 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
+    "@3594t-deck/3594t-net-datalist": "github:3594t-deck/3594t-net-datalist#v0.1.0",
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
-    "@boushi-bird/3594t-net-datalist": "github:boushi-bird/3594t-net-datalist#v0.0.7",
     "@types/classnames": "^2.2.10",
     "@types/copy-webpack-plugin": "^6.0.0",
     "@types/dotenv-webpack": "^1.8.0",
