@@ -1,4 +1,4 @@
-import type { BaseData } from '@boushi-bird/3594t-net-datalist/read-only';
+import type { BaseData } from '@3594t-deck/3594t-net-datalist/read-only';
 import cacheFetch from '../utils/cacheFetch';
 
 export default async (): Promise<BaseData> => {

@@ -1,7 +1,7 @@
 import type {
   BaseData,
   MemberData,
-} from '@boushi-bird/3594t-net-datalist/read-only';
+} from '@3594t-deck/3594t-net-datalist/read-only';
 
 /* eslint-disable camelcase */
 export interface SavedLocalData {
