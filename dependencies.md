@@ -1,3 +1,5 @@
+ - **[@3594t-deck/3594t-net-datalist@0.1.0](https://github.com/3594t-deck/3594t-net-datalist)**
+    - license: MIT
  - **[@babel/code-frame@7.12.11](https://github.com/babel/babel)**
     - license: MIT
  - **[@babel/code-frame@7.14.5](https://github.com/babel/babel)**
@@ -219,8 +221,6 @@
  - **[@babel/types@7.15.0](https://github.com/babel/babel)**
     - license: MIT
  - **[@bcoe/v8-coverage@0.2.3](https://github.com/demurgos/v8-coverage)**
-    - license: MIT
- - **[@boushi-bird/3594t-net-datalist@0.0.7](https://github.com/boushi-bird/3594t-net-datalist)**
     - license: MIT
  - **[@cnakazawa/watch@1.0.4](https://github.com/mikeal/watch)**
     - license: Apache-2.0
@@ -2724,8 +2724,6 @@
     - license: MIT
  - **[type-detect@4.0.8](https://github.com/chaijs/type-detect)**
     - license: MIT
- - **[type-fest@0.17.0](https://github.com/sindresorhus/type-fest)**
-    - license: (MIT OR CC0-1.0)
  - **[type-fest@0.18.1](https://github.com/sindresorhus/type-fest)**
     - license: (MIT OR CC0-1.0)
  - **[type-fest@0.20.2](https://github.com/sindresorhus/type-fest)**
