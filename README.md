@@ -11,7 +11,7 @@
 ```shell
 npm install
 
-git clone https://github.com/3594t-deck/data src/data
+git clone -b main https://github.com/3594t-deck/data src/data
 ```
 
 2. 起動
