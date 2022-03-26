@@ -40,12 +40,10 @@ export interface DispatchFromProps {
 export type Props = StateFromProps & DispatchFromProps;
 
 export default class BaseFilter extends React.PureComponent<Props> {
-  private handleOnChangeSearchMode: (
-    _: 'searchMode',
-    value: boolean
-  ) => void = (_, value): void => {
-    this.props.setSearchMode(value ? 'assist' : 'general');
-  };
+  private handleOnChangeSearchMode: (_: 'searchMode', value: boolean) => void =
+    (_, value): void => {
+      this.props.setSearchMode(value ? 'assist' : 'general');
+    };
 
   private handleOnChangeValue: <V>(
     itemName: BasicFilterConditionKey,

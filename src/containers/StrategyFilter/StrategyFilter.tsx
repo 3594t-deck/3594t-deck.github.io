@@ -36,12 +36,8 @@ export default class StrategyFilter extends React.PureComponent<Props> {
   };
 
   public render(): React.ReactNode {
-    const {
-      searchMode,
-      filterContents,
-      filterCondition,
-      toggleCheckList,
-    } = this.props;
+    const { searchMode, filterContents, filterCondition, toggleCheckList } =
+      this.props;
     const generalModeOff = searchMode !== 'general';
     return (
       <div className={classNames({ 'general-mode-off': generalModeOff })}>

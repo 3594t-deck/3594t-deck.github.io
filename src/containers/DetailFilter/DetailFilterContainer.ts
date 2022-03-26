@@ -59,12 +59,8 @@ const mapDispatchToProps: TMapDispatchToProps = (dispatch) => ({
 });
 
 const mergeProps: TMergeProps = (state, actions) => {
-  const {
-    searchMode,
-    filterSelectionMode,
-    filterCondition,
-    filterContents,
-  } = state;
+  const { searchMode, filterSelectionMode, filterCondition, filterContents } =
+    state;
   const sProps: StateFromProps = {
     searchMode,
     filterCondition,

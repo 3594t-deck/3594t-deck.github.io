@@ -38,12 +38,8 @@ export default class SimpleFilter extends React.Component<Props> {
   };
 
   public render(): React.ReactNode {
-    const {
-      filterContents,
-      filterCondition,
-      searchByDeck,
-      searchMode,
-    } = this.props;
+    const { filterContents, filterCondition, searchByDeck, searchMode } =
+      this.props;
     const modeGeneral = searchMode === 'general';
     return (
       <section className="simple-filter-section">

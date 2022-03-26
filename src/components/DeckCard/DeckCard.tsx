@@ -81,12 +81,8 @@ export default class DeckCard extends React.PureComponent<Props, LocalState> {
     event: React.MouseEvent<HTMLButtonElement>
   ): void => {
     event.stopPropagation();
-    const {
-      index,
-      genMainAwakening,
-      enableGenMainAwaken,
-      onAwakenGenMain,
-    } = this.props;
+    const { index, genMainAwakening, enableGenMainAwaken, onAwakenGenMain } =
+      this.props;
     const awaken = !genMainAwakening;
     if (awaken && !enableGenMainAwaken) {
       return;

@@ -124,9 +124,8 @@ const parseDeckCardDummy = (
 
 const parseDeckCard = ({ generals, filterContents }: DataContents) => {
   return (v: string): KeyLessDeckCard => {
-    const [code, genMain, cost, belongStateNameShort, unitTypeName] = v.split(
-      '_'
-    );
+    const [code, genMain, cost, belongStateNameShort, unitTypeName] =
+      v.split('_');
     const [genMainCode, awakening] = genMain.split('*');
     const g = parseDeckCardGeneral(
       { code, genMainCode, genMainAwakening: awakening === '' },
@@ -304,41 +303,35 @@ const sameCardParam: ParamsOptions<State, SameCardConstraint> = {
   },
 };
 
-const generalLimitParam: ParamsOptions<
-  State,
-  number
-> = generateNumberParamsOptions(
-  {
-    action: (generalCardLimit) =>
-      deckActions.setDeckConstraints({ generalCardLimit }),
-    selector: (state) => state.deck.deckConstraints.generalCardLimit,
-  },
-  DECK_GENERAL_CARD_COUNT
-);
+const generalLimitParam: ParamsOptions<State, number> =
+  generateNumberParamsOptions(
+    {
+      action: (generalCardLimit) =>
+        deckActions.setDeckConstraints({ generalCardLimit }),
+      selector: (state) => state.deck.deckConstraints.generalCardLimit,
+    },
+    DECK_GENERAL_CARD_COUNT
+  );
 
-const assistLimitParam: ParamsOptions<
-  State,
-  number
-> = generateNumberParamsOptions(
-  {
-    action: (assistCardLimit) =>
-      deckActions.setDeckConstraints({ assistCardLimit }),
-    selector: (state) => state.deck.deckConstraints.assistCardLimit,
-  },
-  DECK_ASSIST_CARD_COUNT
-);
+const assistLimitParam: ParamsOptions<State, number> =
+  generateNumberParamsOptions(
+    {
+      action: (assistCardLimit) =>
+        deckActions.setDeckConstraints({ assistCardLimit }),
+      selector: (state) => state.deck.deckConstraints.assistCardLimit,
+    },
+    DECK_ASSIST_CARD_COUNT
+  );
 
-const genMainLimitParam: ParamsOptions<
-  State,
-  number
-> = generateNumberParamsOptions(
-  {
-    action: (genMainAwakeningLimit) =>
-      deckActions.setDeckConstraints({ genMainAwakeningLimit }),
-    selector: (state) => state.deck.deckConstraints.genMainAwakeningLimit,
-  },
-  GEN_MAIN_AWAKENING_LIMIT
-);
+const genMainLimitParam: ParamsOptions<State, number> =
+  generateNumberParamsOptions(
+    {
+      action: (genMainAwakeningLimit) =>
+        deckActions.setDeckConstraints({ genMainAwakeningLimit }),
+      selector: (state) => state.deck.deckConstraints.genMainAwakeningLimit,
+    },
+    GEN_MAIN_AWAKENING_LIMIT
+  );
 
 const exchangeParam: ParamsOptions<State, boolean> = {
   action: (exchange) => deckActions.setDeckConstraints({ exchange }),

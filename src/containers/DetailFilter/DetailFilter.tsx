@@ -42,12 +42,8 @@ export default class DetailFilter extends React.PureComponent<Props> {
   };
 
   public render(): React.ReactNode {
-    const {
-      searchMode,
-      filterContents,
-      filterCondition,
-      toggleCheckList,
-    } = this.props;
+    const { searchMode, filterContents, filterCondition, toggleCheckList } =
+      this.props;
     const generalModeOff = searchMode !== 'general';
     const versionElements: JSX.Element[] = [];
     filterContents.versions.forEach((version, i) => {
