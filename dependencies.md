@@ -1394,7 +1394,7 @@
     - license: MIT
  - **[ignore@5.1.8](https://github.com/kaelzhang/node-ignore)**
     - license: MIT
- - **[immer@9.0.5](https://github.com/immerjs/immer)**
+ - **[immer@9.0.12](https://github.com/immerjs/immer)**
     - license: MIT
  - **[import-fresh@2.0.0](https://github.com/sindresorhus/import-fresh)**
     - license: MIT
@@ -2642,7 +2642,7 @@
     - license: BSD-3-Clause
  - **[tapable@1.1.3](https://github.com/webpack/tapable)**
     - license: MIT
- - **[tar@6.1.8](https://github.com/npm/node-tar)**
+ - **[tar@6.1.11](https://github.com/npm/node-tar)**
     - license: ISC
  - **[temp-dir@1.0.0](https://github.com/sindresorhus/temp-dir)**
     - license: MIT
