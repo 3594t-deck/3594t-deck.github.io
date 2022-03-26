@@ -1212,7 +1212,7 @@
     - license: ISC
  - **[flush-write-stream@1.1.1](https://github.com/mafintosh/flush-write-stream)**
     - license: MIT
- - **[follow-redirects@1.14.1](https://github.com/follow-redirects/follow-redirects)**
+ - **[follow-redirects@1.14.8](https://github.com/follow-redirects/follow-redirects)**
     - license: MIT
  - **[for-in@1.0.2](https://github.com/jonschlinkert/for-in)**
     - license: MIT
