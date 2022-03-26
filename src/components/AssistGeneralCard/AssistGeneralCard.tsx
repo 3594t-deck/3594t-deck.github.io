@@ -30,12 +30,8 @@ export default class AssistGeneralCard extends React.PureComponent<Props> {
   };
 
   public render(): React.ReactNode {
-    const {
-      general,
-      show,
-      showStrategyExplanation,
-      showAddButtons,
-    } = this.props;
+    const { general, show, showStrategyExplanation, showAddButtons } =
+      this.props;
     const clickable = showAddButtons;
     const style: React.CSSProperties = {
       backgroundColor: general.state.thincolor,

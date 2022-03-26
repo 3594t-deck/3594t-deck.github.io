@@ -5,9 +5,7 @@ import type { ButtonItem } from '3594t-deck';
 import FilterButtonList from '../FilterButtonList';
 import { strategyRangeImageUrl } from '../../utils/externalUrl';
 
-export default class StrategyRangeButtonList extends FilterButtonList<
-  'strategyRanges'
-> {
+export default class StrategyRangeButtonList extends FilterButtonList<'strategyRanges'> {
   protected createLabel(item: ButtonItem): React.ReactNode | React.ReactNode[] {
     if (item.code == null) {
       return '';

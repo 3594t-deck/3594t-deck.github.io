@@ -439,11 +439,8 @@ const mergeProps: TMergeProps = (state, actions) => {
       let cost = '10';
       let belongState: string | undefined;
       let unitType: string | undefined;
-      const {
-        costs,
-        belongStates,
-        unitTypes,
-      } = store.getState().datalist.filterCondition.basic;
+      const { costs, belongStates, unitTypes } =
+        store.getState().datalist.filterCondition.basic;
       if (costs.length >= 1) {
         cost = [...costs].sort()[0];
       }
