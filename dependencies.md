@@ -2790,7 +2790,7 @@
     - license: BSD-2-Clause
  - **[urix@0.1.0](https://github.com/lydell/urix)**
     - license: MIT
- - **[url-parse@1.5.3](https://github.com/unshiftio/url-parse)**
+ - **[url-parse@1.5.10](https://github.com/unshiftio/url-parse)**
     - license: MIT
  - **[url@0.11.0](https://github.com/defunctzombie/node-url)**
     - license: MIT
