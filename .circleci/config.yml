@@ -4,7 +4,7 @@ jobs:
   install:
 
     docker:
-      - image: circleci/node:14
+      - image: circleci/node:16
 
     working_directory: ~/repo
 
@@ -32,7 +32,7 @@ jobs:
   lint:
 
     docker:
-      - image: circleci/node:14
+      - image: circleci/node:16
 
     working_directory: ~/repo
 
@@ -47,7 +47,7 @@ jobs:
   test:
 
     docker:
-      - image: circleci/node:14
+      - image: circleci/node:16
 
     working_directory: ~/repo
 
@@ -68,7 +68,7 @@ jobs:
   build:
 
     docker:
-      - image: circleci/node:14
+      - image: circleci/node:16
 
     working_directory: ~/repo
 
@@ -83,7 +83,7 @@ jobs:
   deploy:
 
     docker:
-      - image: circleci/node:14
+      - image: circleci/node:16
     environment:
       GIT_AUTHOR_EMAIL: circleci@example.com
       GIT_AUTHOR_NAME: Circle CI
