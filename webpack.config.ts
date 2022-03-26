@@ -1,5 +1,6 @@
 import path from 'path';
 import type { Configuration } from 'webpack';
+import 'webpack-dev-server';
 import Dotenv from 'dotenv-webpack';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
@@ -39,7 +40,7 @@ const indexHtmlCacheRule = indexHtmlCacheRuleExt as RuntimeCacheRule;
 
 const isProduction: boolean = process.env.NODE_ENV === 'production';
 
-const fileName = '[name].[chunkhash]';
+const fileName = '[name].[hash]';
 
 const distDir = path.resolve(__dirname, 'dist');
 
@@ -122,7 +123,7 @@ const config: Configuration = {
       swDest: 'service-worker.js',
       clientsClaim: true,
       skipWaiting: true,
-      maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
+      maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
       exclude: [/\.map$/i, /\.LICENSE\.txt$/i, 'index.html'],
       runtimeCaching: [
         {
@@ -161,7 +162,9 @@ const config: Configuration = {
   },
   devServer: {
     host: '0.0.0.0',
-    contentBase: path.resolve(__dirname, 'src'),
+    static: {
+      directory: path.resolve(__dirname, 'src'),
+    },
   },
 };
 
