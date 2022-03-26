@@ -8,6 +8,7 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
+    "skipLibCheck": true,
     "sourceMap": true,
     "strictNullChecks": true,
     "target": "ESNext",
