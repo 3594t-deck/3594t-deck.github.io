@@ -1882,7 +1882,7 @@
     - license: MIT
  - **[multicast-dns@6.2.3](https://github.com/mafintosh/multicast-dns)**
     - license: MIT
- - **[nanoid@3.1.25](https://github.com/ai/nanoid)**
+ - **[nanoid@3.3.1](https://github.com/ai/nanoid)**
     - license: MIT
  - **[nanomatch@1.2.13](https://github.com/micromatch/nanomatch)**
     - license: MIT
