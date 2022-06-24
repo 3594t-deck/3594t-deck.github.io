@@ -71,7 +71,7 @@ const genMainParams: GenMainParamsMap = {
     ...EMPTY_OTHER_PARAMS,
     description: '最大士気が上がる\nただし12より多くならない',
     self: EMPTY_PARAMS,
-    maxMorale: 2,
+    maxMorale: 3,
   },
 };
 
