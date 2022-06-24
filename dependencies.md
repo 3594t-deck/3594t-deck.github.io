@@ -630,7 +630,7 @@
     - license: MIT
  - **[async-each@1.0.3](https://github.com/paulmillr/async-each)**
     - license: MIT
- - **[async@2.6.3](https://github.com/caolan/async)**
+ - **[async@2.6.4](https://github.com/caolan/async)**
     - license: MIT
  - **[asynckit@0.4.0](https://github.com/alexindigo/asynckit)**
     - license: MIT
