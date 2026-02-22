@@ -13,5 +13,9 @@ defaults:
       path: updateinfo.html
     values:
       sitemap: false
+  - scope:
+      path: google44344edccaf00e77.html
+    values:
+      sitemap: false
 url: 'https://3594t-deck.github.io'
 google_tag_manager: GTM-NFHN8MZ
