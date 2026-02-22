@@ -18,6 +18,10 @@ jobs:
 
       - run: npm --production=false install
 
+      - run: git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - run: npm run deploy
         env:
           NODE_OPTIONS: --openssl-legacy-provider
@@ -25,4 +29,3 @@ jobs:
           GIT_AUTHOR_NAME: GitHub Actions
           GIT_COMMITTER_EMAIL: github-actions[bot]@users.noreply.github.com
           GIT_COMMITTER_NAME: GitHub Actions
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
