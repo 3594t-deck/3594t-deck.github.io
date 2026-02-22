@@ -7,7 +7,7 @@ import { General, AssistGeneral, DefaultAssist } from '3594t-deck';
  */
 export function generalThumbUrl(general: General, pocket: boolean): string {
   const code = pocket && general.hasPocket ? general.pocketCode : general.code;
-  return `https://3594t.net/img/card_small/${code}.jpg`;
+  return `/data/img/card_small/${code}.jpg`;
 }
 
 /**
@@ -18,7 +18,7 @@ export function generalThumbUrl(general: General, pocket: boolean): string {
 export function generalAvatarUrl(general: General, pocket: boolean): string {
   const code =
     pocket && general.hasPocket ? general.pocketAvatar : general.avatar;
-  return `https://3594t.net/img/avatar/${code}.png`;
+  return `/data/img/avatar/${code}.png`;
 }
 
 /**
@@ -34,7 +34,7 @@ export function generalOfficiallUrl(general: General): string {
  * @return {string} 遊軍カードのサムネイル画像のURL
  */
 export function assistThumbUrl(assist: AssistGeneral): string {
-  return `https://3594t.net/img/card_small/${assist.code}.jpg`;
+  return `/data/img/card_small/${assist.code}.jpg`;
 }
 
 /**
@@ -42,7 +42,7 @@ export function assistThumbUrl(assist: AssistGeneral): string {
  * @return {string} 遊軍カードのアバター画像のURL
  */
 export function assistAvatarUrl(assist: AssistGeneral | DefaultAssist): string {
-  return `https://3594t.net/img/avatar/${assist.avatar}.png`;
+  return `/data/img/avatar/${assist.avatar}.png`;
 }
 
 /**
@@ -58,5 +58,5 @@ export function assistOfficiallUrl(assist: AssistGeneral): string {
  * @return {string} 計略・戦技の範囲画像URL
  */
 export function strategyRangeImageUrl(rangeCode: string): string {
-  return `https://3594t.net/img/strat_range/${rangeCode}.png`;
+  return `/data/img/strat_range/${rangeCode}.png`;
 }

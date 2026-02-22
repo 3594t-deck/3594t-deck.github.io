@@ -136,6 +136,17 @@ const config: Configuration = {
           handler: 'NetworkFirst',
         },
         {
+          urlPattern:
+            /^data\/img\/(:?avatar|card_small|strat_range)\/.*\.(:?jpg|png|gif)$/i,
+          handler: 'CacheFirst',
+          options: {
+            cacheName: 'data/img',
+            expiration: {
+              maxAgeSeconds: 3 * 86400,
+            },
+          },
+        },
+        {
           urlPattern: /^https:\/\/3594t\.net\/img\/.*\.(:?jpg|png|gif)$/i,
           handler: 'CacheFirst',
           options: {
