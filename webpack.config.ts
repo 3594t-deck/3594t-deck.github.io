@@ -137,7 +137,7 @@ const config: Configuration = {
         },
         {
           urlPattern:
-            /^data\/img\/(:?avatar|card_small|strat_range)\/.*\.(:?jpg|png|gif)$/i,
+            /\/data\/img\/(?:avatar|card_small|strat_range)\/.*\.(?:jpg|png|gif)$/i,
           handler: 'CacheFirst',
           options: {
             cacheName: 'data/img',
@@ -147,7 +147,7 @@ const config: Configuration = {
           },
         },
         {
-          urlPattern: /^https:\/\/3594t\.net\/img\/.*\.(:?jpg|png|gif)$/i,
+          urlPattern: /^https:\/\/3594t\.net\/img\/.*\.(?:jpg|png|gif)$/i,
           handler: 'CacheFirst',
           options: {
             cacheName: '3594t.net/img',
